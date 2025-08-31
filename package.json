@@ -44,4 +44,8 @@
       "last 1 safari version"
     ]
   }
+},
+"scripts": {
+  "start": "node server.js",
+  "build": "cd client && npm install && npm run build"
 }
