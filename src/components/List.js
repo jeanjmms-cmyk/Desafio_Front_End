@@ -78,11 +78,10 @@ const List = () => {
   return (
     <div>
       <div className="listOption">
-        <h1  className="button" onClick={user}>Lista de Users </h1>
-        <h1  className="button" onClick={cat}> Lista de Gatos</h1>
+        <h1 onClick={user}>Usuários </h1>
+        <h1 onClick={cat}>Lista de Gatos</h1>
       </div>
 
-      
       {catList && (
         <div>
           {loading && (
@@ -94,7 +93,7 @@ const List = () => {
               </div>
             </div>
           )}
-          <div >
+          <div className="box-card">
             {tag.map((card) => (
               <div
                 className="card"
@@ -132,7 +131,6 @@ const List = () => {
               </div>
             </div>
           )}
-
           <div className="box-card">
             {users.map((person) => (
               <div
@@ -167,8 +165,9 @@ const List = () => {
           </div>
         </div>
       )}
-      </div>
+    </div>
   );
 };
 
 export default List;
+
